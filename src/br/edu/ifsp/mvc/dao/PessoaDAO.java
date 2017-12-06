@@ -19,7 +19,7 @@ public class PessoaDAO {
     
     public boolean persistirPessoa(Pessoa pessoa) throws IOException{
         
-        FileOutputStream fout = new FileOutputStream("teste");
+        FileOutputStream fout = new FileOutputStream(".\\Beans.ser");
         ObjectOutputStream oos = new ObjectOutputStream(fout);
         oos.writeObject(pessoa);
         return true;
